@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | SecureAuth</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🔐 <strong>SecureAuth</strong></div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card" style="text-align: center;">
+            <h1>ระบบยืนยันตัวตนความปลอดภัยสูง</h1>
+            <p>พัฒนาด้วย FastAPI (Async) และระบบ Token Rotation</p>
+            <div style="margin: 20px 0;">
+                <span id="serverStatus" class="status-badge offline">Checking Server...</span>
+            </div>
+            <button onclick="healthCheck()" class="btn-primary" style="width: auto;">Refresh Status</button>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

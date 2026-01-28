@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | SecureAuth</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SecureAuth</div>
+        <div class="nav-links">
+            <a href="profile.html" class="active">Dashboard</a>
+            <button onclick="logout()" class="btn-danger" style="padding: 5px 15px;">Logout</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h1>ยินดีต้อนรับ, <span id="displayUsername">...</span>!</h1>
+            <p>อีเมลของคุณ: <span id="displayEmail">...</span></p>
+            <div style="margin-top: 20px;">
+                <span class="status-badge online">Verified Session</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script>getProfile();</script> </body>
+</html>

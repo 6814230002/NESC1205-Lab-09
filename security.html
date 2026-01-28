@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Tools | SecureAuth</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🔐 <strong>SecureAuth</strong></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="security.html" class="active">Tools</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h3>🔍 JWT Token Decoder (Client-side)</h3>
+            <p>ข้อมูลที่ซ่อนอยู่ใน Access Token ปัจจุบันของคุณ:</p>
+            <pre id="jwtPayload" style="background: #0f172a; padding: 20px; border-radius: 8px; color: #10b981; overflow-x: auto;">Login to see token data</pre>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Bcrypt Hash Demo</h3>
+            <p>จำลองการ Hash รหัสผ่านแบบเดียวกับที่ใช้ใน <code>get_password_hash()</code></p>
+            <input type="text" id="bcryptInput" value="SecurePass123!">
+            <button onclick="demonstrateBcrypt()" class="btn-primary">Generate Hash</button>
+            <div id="bcryptResult" style="margin-top: 15px; font-family: monospace; word-break: break-all; color: var(--warning);"></div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
